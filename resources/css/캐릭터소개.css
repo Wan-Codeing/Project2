@@ -1,0 +1,322 @@
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+.mv_loop {
+    position: absolute;
+    bottom: auto;
+    width: 100%;
+}
+video{
+    object-fit: cover;
+    z-index: 20;
+}
+.l_title {
+    background: url(https://nxm-clw-cdn.dn.nexoncdn.co.kr/bluearchive/img/brand/l_title_bg.png) 100% no-repeat;
+    left: 0;
+    top: 140px;
+    position: absolute;
+    width: 8%;
+    height: 50px;
+    padding-right: 32px;
+    z-index: 30;
+}
+.l_title span {
+    height: 32px;
+    float: left;
+    background: url(https://nxm-clw-cdn.dn.nexoncdn.co.kr/bluearchive/img/brand/l_title_simbol01.png) 0 no-repeat;
+    padding-left: 38px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 35px;
+    margin-top: 9px;
+    margin-left: 42px;
+}
+.tt_h1{
+    width: 100%;
+    text-align: center;
+    color: #336ca5;
+    height: 66px;
+    margin-top: 135px;
+    font-size: 55px;
+    position: absolute;
+}
+.tt_h2{
+    width: 100%;
+    position: absolute;
+    margin-top: 110px;
+    font-size: 18px;
+    font-weight: 400;
+    height: 22px;
+    text-align: center;
+}
+.sec08 {
+    background: url(https://nxm-clw-cdn.dn.nexoncdn.co.kr/bluearchive/img/brand/sec08_con_bg_kr.png) top no-repeat;
+    background-size: cover;
+}
+
+.tab_link {
+    width: 481px;
+    height: 56px;
+    position: absolute;
+    left: 40px;
+    top: 279px;
+}
+.tab_link li {
+    float: left;
+    margin-left: -36px;
+    width: 142px;
+    height: 56px;
+}
+.tab_link li a {
+    width: 100%;
+    height: 100%;
+    float: left;
+    letter-spacing: -999999px;
+    font-size: 0;
+}
+
+.frame_tab {
+    width: 481px;
+    height: 56px;
+    position: absolute;
+    left: 350px;
+    top: 230px;
+}
+#tab_job1 {
+    background: url(https://nxm-clw-cdn.dn.nexoncdn.co.kr/bluearchive/img/brand/frame_tab01.png) no-repeat;
+}
+#tab_job2 {
+    background: url(https://nxm-clw-cdn.dn.nexoncdn.co.kr/bluearchive/img/brand/frame_tab02.png) no-repeat;
+}
+#tab_job3 {
+    background: url(https://nxm-clw-cdn.dn.nexoncdn.co.kr/bluearchive/img/brand/frame_tab03.png) no-repeat;
+}  
+#tab_job4 {
+    background: url(https://nxm-clw-cdn.dn.nexoncdn.co.kr/bluearchive/img/brand/frame_tab04.png) no-repeat;
+}
+.char_info_wrap_1 {
+    background: url(https://nxm-clw-cdn.dn.nexoncdn.co.kr/bluearchive/img/brand/frame01.png) top no-repeat;
+    width: 1216px;
+    height: 654px;
+    float: left;
+    position: relative;
+    margin-top: -1%;
+    margin-left: -1%;
+}
+.char_info_wrap_2 {
+    background: url(https://nxm-clw-cdn.dn.nexoncdn.co.kr/bluearchive/img/brand/frame02.png) top no-repeat;
+    width: 1216px;
+    height: 654px;
+    float: left;
+    position: relative;
+    margin-top: -1%;
+    margin-left: -1%;
+}
+.char_info_wrap_3 {
+    background: url(https://nxm-clw-cdn.dn.nexoncdn.co.kr/bluearchive/img/brand/frame03.png) top no-repeat;
+    width: 1216px;
+    height: 654px;
+    float: left;
+    position: relative;
+    margin-top: -1%;
+    margin-left: -1%;
+}
+.char_info_wrap_4 {
+    background: url(https://nxm-clw-cdn.dn.nexoncdn.co.kr/bluearchive/img/brand/frame04.png) top no-repeat;
+    width: 1216px;
+    height: 654px;
+    float: left;
+    position: relative;
+    margin-top: -1%;
+    margin-left: -1%;
+}
+.char_sum_img{
+    position: absolute;
+    left: 156px;
+    top: 125px;
+    transition: all .5s ease;
+}
+.char_sum_l>img{
+    left: 590px;
+    position: absolute;
+    height: 120%;
+    top: -52px;
+}
+.char_info {
+    top: 124px;
+    position: absolute;
+    left: 420px;
+    transition: all .5s ease;
+}
+.char_info dt {
+    width: 100%;
+    float: left;
+    height: 66px;
+}
+#char_name {
+    float: left;
+    font-size: 30px;
+    line-height: 30px;
+    color: #00a1e9;
+    margin-top: 29px;
+    font-style: normal;
+    letter-spacing: 0;
+}
+.char_info dd {
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: -.05em;
+    color: #596e83;
+    margin-bottom: 9px;
+    width: 100%;
+    float: left;
+}
+#tt{
+    font-size: 20px;
+    line-height: 20px;
+    color: #336ca5;
+    margin-bottom: 22px;
+    margin-top: 12px;
+    letter-spacing: 0;
+    width: 100%;
+    float: left;
+}
+.char_info dt span {
+    font-size: 55px;
+    line-height: 120%;
+    letter-spacing: -.05em;
+    color: #00365c;
+    float: left;
+    margin-right: 10px;
+    font-weight: 700;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+li {
+    list-style: none;
+}
+.char_info_btn ul li {
+    float: left;
+    margin-right: 8px;
+}
+img {
+    overflow: clip;
+}
+.char_info_btn {
+    top: 350px;
+    position: absolute;
+    left: 420px;    
+    transition: all .5s ease;
+   
+}
+.char_info_btn img{
+    opacity: 0.6;
+}
+.char_info_btn img:hover{
+   opacity: 1;
+}
+.sum_list {
+    height: 150px;
+    position: absolute;
+    width: 620px;
+    overflow: hidden;
+    top: 416px;
+    left: 127px;
+}
+.sum_dot {
+    width: 1000%;
+    float: left;
+}
+.sum_dot li {
+    float: left;
+    position: relative;
+    height: 100%;
+    width: 145px;
+    cursor: pointer;
+}
+.sum_dot li>img {
+    float: left;
+    margin-left: 9px;
+    margin-top: 13px;
+}
+.sum_dot li>img {
+    float: left;
+    margin-left: 9px;
+    margin-top: 13px;
+}
+.prev_char {
+    position: absolute;
+    left: 68px;
+    top: 459px;
+}
+.next_char {
+    position: absolute;
+    left: 754px;
+    top: 459px;
+}
+.tab_link1 ul{
+    width: 750px;
+    display:flex;
+    position: absolute;
+    height: 10%;
+    margin-top: 12%;
+    margin-left : 16.2%;
+}
+.tab_link1 li{
+    width: 145px;
+    height: 60%;
+}
+.tab01:hover{
+    cursor: pointer;
+    background: url(https://nxm-clw-cdn.dn.nexoncdn.co.kr/bluearchive/img/brand/tab01_over.png) no-repeat;
+    background-size: 100% 100%;
+    margin-left:0%;
+}
+.tab02:hover{
+    cursor: pointer;
+    background: url(https://nxm-clw-cdn.dn.nexoncdn.co.kr/bluearchive/img/brand/tab02_over.png) no-repeat;
+    background-size: 100% 100%;
+    margin-left:-5%;
+}
+.tab03:hover{
+    cursor: pointer;
+    background: url(https://nxm-clw-cdn.dn.nexoncdn.co.kr/bluearchive/img/brand/tab03_over.png) no-repeat;
+    background-size: 100% 100%;
+    margin-left:-9%;
+}
+.tab04:hover{
+    cursor: pointer;
+    background: url(https://nxm-clw-cdn.dn.nexoncdn.co.kr/bluearchive/img/brand/tab04_over.png) no-repeat;
+    background-size: 100% 100%;
+    margin-left:-13.5%;
+}
+.tab_link1 a{
+    font-size: 0px;
+    width: 100%;
+    height: 100%;
+}
+.back_btn {
+    position: relative;
+    left: 75%;
+    top: 170px;
+}
+#image-container {
+    position: relative; 
+    width: 100%;
+    height: 100%; 
+}
+
+#image-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display:none;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}

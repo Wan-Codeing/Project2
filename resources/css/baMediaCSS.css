@@ -1,0 +1,335 @@
+div{
+  display: block;
+/*   box-sizing: border-box;
+  /* border: 1px solid black; */
+  
+}
+ul{
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  float: left;
+
+
+}
+li{
+  display: list-item;
+  text-align: left;
+
+}
+.wrap{
+  display: block;
+  margin: 0;
+  background-color: black;
+}
+img{
+  margin: auto;
+  display: block;
+  
+}
+p{
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+html.layoutPC *{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 0;
+  text-decoration: none;
+}
+html.layoutPC a {
+  text-decoration: none;
+  transition: color .3s ease;
+  color: #000;
+}
+html.layoutPC .sec09, .sec10{
+  background: url(../../images2/media_bg01.png) 100% no-repeat;
+  background-size: cover;
+
+}
+/* html.layoutPC section.active{
+  transform: scale(1) translate(0);
+  z-index: 10;
+  opacity: 1;
+  display: block;
+} */
+
+.mCustomScrollBox{
+position: relative;
+overflow: hidden;
+height: 100%;
+max-width: 100%;
+outline: none;
+direction: ltr;
+}
+.l_title{
+  background: url(../../images2/l_title_bg.png) 100% no-repeat;
+  left: 0;
+  top: 150px;
+  position: absolute;
+  width: 139px;
+  height: 50px;
+  padding-right: 32px;
+  z-index: 30;
+}
+.l_title span{
+  height: 32px;
+  float: left;
+  background: url(../../images2/l_title_simbol01.png) 0 no-repeat;
+  padding-left: 38px;
+  color: #fff;
+  margin-top: 10px;
+}
+#l_title_name{
+  line-height: 30px;
+  font-size: 18px;
+}
+html.layoutPC .tab_wrap{
+  position: fixed;
+  left: 0;
+  top: 78px;
+  z-index: 300;
+}
+html.layoutPC .tab_wrap ul{
+  
+  background-color: #fff;
+}
+html.layoutPC .tab_wrap ul li{
+  float: left;
+  height: 32px;
+  line-height: 34px;
+  padding: 0 4px;
+  margin-left: 8px;
+}
+html.layoutPC .tab_wrap span{
+  float: left;
+}
+html.layoutPC .tab_wrap span.l{
+  background: url(../../images2/tab_l.png) 0 0 no-repeat;
+  width: 26px;
+  height: 32px;
+}
+html.layoutPC .tab_wrap span.r{
+  background: url(../../images2/tab_r.png) 0 0 no-repeat;
+  width: 26px;
+  height: 32px;
+}
+html.layoutPC.sction09_con{
+  height: 1080px;
+  width: 100%;
+  display: block;
+}
+html.layoutPC.center_wrap{
+  perspective: 1500px;
+}
+html.layoutPC.center_wrap{
+  width: 1280px;
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+}
+html.layoutPC .tt_h1, html.layoutPC .tt_h2{
+  width: 100%;
+  float: left;
+  color: #fff;
+  text-align: center;
+  line-height: 1.2;
+  letter-spacing: -0.05em;
+}
+html.layoutPC .tt_h2{
+  margin-top: 110px;
+  font-size: 18px;
+  font-weight: 400;
+  height: 22px;
+}
+html.layoutPC .tt_h1{
+  margin-top: 7px;
+  font-size: 55px;
+  height: 78px;
+}
+html.layoutPC .top_bg2{
+  background: url(../../images2/note.png) no-repeat;
+  width: 466px;
+  height: 152px;
+  position: absolute;
+  left: 13em;
+  top: 15em;
+
+}
+html.layoutPC .top_bg{
+  background: url(../../images2/top_bg.png) no-repeat;
+  width: 65em;
+  height: 4em;
+  position: absolute;
+  left: 30em;
+  top: 13em;
+}
+html.layoutPC .movie_bn_wrap{
+  width: 63.5em;
+  height: 605px;
+  float: left;
+  background-color: #fff;
+  margin-left: 30em;
+  margin-top: 2.4em;
+  position: relative;
+  
+}
+html.layoutPC .movie_bn{
+  width: 100%;
+  height: 100%;
+  float: left;
+  position: relative;
+  
+}
+html.layoutPC .movie_bn li{
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+background-color: #fff;
+z-index: 30;
+padding: 2px 2px 2px;
+
+}
+html.layoutPC .movie_bn li a {
+  width: 100%;
+  height: 100%;
+  /* float: left; */
+  display: block;
+  position: relative;
+}
+html.layoutPC .movie_bn li a>img{
+  width: 976px;
+  position: absolute;
+ 
+}
+html.layoutPC .movie_bn li a img{
+  position: absolute;
+  /* float: left; */
+  margin-left: 21px;
+  margin-top: 28px;
+}
+html.layoutPC .movie_bn_wrap span.next, html.layoutPC .movie_bn_wrap span.prev {
+  position: absolute;
+  top: 50%;
+  z-index: 40;
+  transform: translateY(-50%);
+}
+html.layoutPC .movie_bn_wrap span.prev{
+  left: -29px;
+}
+html.layoutPC .movie_bn_wrap span.next{
+  right: -19px;
+}
+html.layoutPC .bn_cnt2{
+  background: url(../../images2/cnt_bg.png) no-repeat;
+  width: 166px;
+  height: 63px;
+  position: absolute;
+  right: 37px;
+  top: 583px;
+  line-height: 66px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: -.05em;
+  color: rgba(0,0,0,.7);
+  z-index: 40;
+}
+html.layoutPC .movie_info{
+  float: left;
+  font-size: 18px;
+  letter-spacing: -.05em;
+  color: #99d1fa;
+  margin-left: 131px;
+  margin-top: 25px;
+}
+html.layoutPC .movie_more_btn{
+  float: left;
+  padding: 8px 12px 6px 38px;
+  background: url(../../images2/movie_icon.png) 10px 10px no-repeat;
+  border: 1px solid hsla(0,0%,100%,.4);
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-left: 33px;
+  margin-top: 16px;
+}
+html.layoutPC .movie_more_btn a{
+  font-size: 18px;
+  font-weight: 100;
+  letter-spacing: -.05em;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  float: left;
+}
+html.layoutPC .mv_popup{
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url(../../images2/talk_pop_bg.png) repeat;
+  width: 100%;
+  height: 60em;
+  z-index: 300;
+  display: none;
+}
+html.layoutPC .pop_iframe{
+  width: 1024px;
+  height: 576px;
+  top: 50%;
+  margin: -288px auto 0;
+  position: relative;
+  background-color: #000;
+}
+html.layoutPC .pop_logo{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+html.layoutPC .pop_logo{
+  top: -175px;
+  left: 8%;
+}
+html.layoutPC .pop_close, html.layoutPC .pop_close:hover{
+transition: all .3s linear;
+-moz-transition: all .3s linear;
+-o-transition: all .3s linear;
+-webkit-transition: all .3s linear;
+}
+html.layoutPC .pop_close:hover{
+  transform: scale(1.05);
+}
+html.layoutPC .pop_close{
+  position: absolute;
+  top: -77px;
+  right: -20%;
+  margin-left: -20px;
+  transform: scale(1);
+ 
+}
+
+html.layoutPC .btn1{
+  width: 35px;
+  height: 35px;
+  left: 92%;
+  top: 0.5em;
+  
+}
+html.layoutPC .btn2{
+  width: 35px;
+  height: 35px;
+  left: 92%;
+  top: 0.5em;
+}
+html.layoutPC .btn2:hover{
+  display: none;
+}

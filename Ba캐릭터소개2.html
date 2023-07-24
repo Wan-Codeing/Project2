@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>캐릭터소개</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="resources/css/캐릭터소개.css" rel="stylesheet">
+    <script src="resources/js/캐릭터소개.js"></script>
+    <link href="resources/css/Navi.css" rel="stylesheet">
+    <link href="resources/css/footer.css" rel="stylesheet">
+</head>
+<div id="page04" style="display:block;">
+    <header>
+        <div class="ba_navi_wrap">
+            <div>
+                <a href="Ba블루아카메인.html"><img src="img/logo.png" id="Blue_Archive_logo"></a>
+            </div>
+            <nav>
+                <ul class="navi clear">
+                    <div id="dim"></div>
+                    <li>
+                        <a href="Ba게임소개 세계관.html" id="ba_navi_introduce"><span>게임소개</span></a>
+                        <ul>
+                            <li style="margin-top: 0px;">
+                                <a href="Ba게임소개 세계관.html">세계관</a>
+                            </li>
+                            <li style="margin-top: -18px;">
+                                <a href="Ba학생명부.html">학생명부</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="BaMedia1.html" id="ba_navi_media"><span>미디어</span></a>
+                        <ul>
+                            <li style="margin-top: 0px;">
+                                <a href="BaMedia1.html">영상</a>
+                            </li>
+                            <li style="margin-top: -18px;">
+                                <a href="BaMedia2.html">일러스트</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="Ba커뮤니티.html" id="ba_navi_community"><span>커뮤니티</span></a>
+                        <ul>
+                            <li style="margin-top: 0px;">
+                                <a href="https://forum.nexon.com/bluearchive" target="blank">공식 커뮤니티
+                                    <em><img src="https://lwi.nexon.com/m_ba/brand/blank2.png" style="width: 12px;"></em>
+                                </a>
+                            </li>
+                            <li style="margin-top: -18px;">
+                                <a href="https://www.youtube.com/channel/UCj0iColXMAjPA92rH-AXVGQ" target="blank">공식 YouTube
+                                    <em><img src="https://lwi.nexon.com/m_ba/brand/blank2.png" style="width: 12px;"></em>
+                                </a>
+                            </li>
+                            <li style="margin-top: -18px;">
+                                <a href="https://twitter.com/KR_BlueArchive" target="blank">공식 Twitter
+                                    <em><img src="https://lwi.nexon.com/m_ba/brand/blank2.png" style="width: 12px;"></em>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="Ba쿠폰함.html" id="ba_navi_coupon" target="blank"><span>쿠폰함
+                            <em>
+                                <img src="https://lwi.nexon.com/m_ba/brand/blank2.png" style="width: 14px;">
+                            </em></span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="ba_navi_store">
+                <div>
+                    <a href="https://apps.apple.com/kr/app/id1571873795"><img src="https://lwi.nexon.com/m_ba/brand/gnb_app01.png"></a>
+                </div>
+                <div>
+                    <a href="https://play.google.com/store/apps/details?id=com.nexon.bluearchive&referrer=adjust_reftag%3DcPZv6PBRGCDLq%26utm_source%3DNxKR_KR_Official%26utm_campaign%3DOfficial_Brandpage%26utm_content%3DKR_AOS"><img src="https://lwi.nexon.com/m_ba/brand/gnb_app02.png"></a>
+                </div>
+                <div>
+                    <a href="https://m.onestore.co.kr/mobilepoc/apps/appsDetail.omp?prodId=0000758646&scYn=Y&referrer=adjust_reftag%3DcQsv21AvvHC3P%26utm_source%3DNxKR_KR_Officialpage%26utm_campaign%3DOfficialpage%26utm_content%3DOnestore"><img src="https://lwi.nexon.com/m_ba/brand/gnb_app03.png"></a>
+                </div>
+            </div>
+            <div class="ba_navi_links">
+                <div>
+                    <a href="https://www.youtube.com/channel/UCj0iColXMAjPA92rH-AXVGQ"><img src="https://lwi.nexon.com/m_ba/brand/gnb01_off.png"></a>
+                </div>
+                <div>
+                    <a href="https://twitter.com/KR_BlueArchive"><img src="https://lwi.nexon.com/m_ba/brand/gnb02_off.png"></a>
+                </div>
+                <div>
+                    <a href="https://forum.nexon.com/bluearchive/"><img src="https://lwi.nexon.com/m_ba/brand/gnb03_off.png"></a>
+                </div>
+                <div>
+                    <a href="">
+                        <img src="https://lwi.nexon.com/m_ba/brand/gnb04_off.png"></div>
+                    </a>
+                <div>
+                    <a href="">
+                        <img src="https://nxm-clw-cdn.dn.nexoncdn.co.kr/bluearchive/img/brand/gnb05_off.png" id="music_off">
+                        <img src="https://nxm-clw-cdn.dn.nexoncdn.co.kr/bluearchive/img/brand/gnb06_on.png" id="music_on">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="mv_loop load">
+        <video src="https://ba.vod.nexoncdn.co.kr/bg/sec08_bg.mp4" muted="muted" loop="loop" playsinline="" autoplay="autoplay" style="width: 1920px; height: 1080px;"></video>
+    </div>
+    <span class="l_title"><span>교실</span></span>
+        <div class="sction07_con">
+            <div class="center_wrap">
+                <h2 class="tt_h2">- 게임 소개 -</h2>
+                <h1 class="tt_h1">학생명부</h1>
+            </div>
+        </div>
+        <div class="frame_tab" id="tab_job1" style="display:none;" data-aos="fade-up" data-aos-delay="250">
+            <div class="char_info_wrap_1" id="job1">
+                <div class="char_wrap" id="char_load1" style="display: none;">
+                    <div class="char_sum_img">
+                        <img src="https://lwi.nexon.com/m_ba/brand/char/01_m_shiroko.png" alt="shiroko">
+                    </div>
+                    <div class="char_sum_l">
+                        <img src="https://lwi.nexon.com/m_ba/brand/char/01_l_shiroko.png" alt="shiroko">
+                    </div>
+                    <dl class="char_info">
+                        <dt><span>시로코</span><em id="char_name">SHIROKO</em></dt>
+                        <dd id="tt">성우 :<em> 小倉唯</em></dd>
+                        <dd>학원 : 아비도스 고등학교</dd>
+                        <dd>학년 : 2학년</dd>
+                        <dd>생일 : 5월 16일</dd>
+                        <dd>신장 : 156 cm</dd>
+                    </dl>
+                    <div class="char_info_btn">
+                        <ul>
+                            <li>
+                                <a href="https://ba.vod.nexoncdn.co.kr/audio/voice/01.mp3" onclick="pl_ad('SHIROKO')">
+                                    <img src="https://lwi.nexon.com/m_ba/brand/char_info_btn01_off.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://ba.vod.nexoncdn.co.kr/bg/char01_video.mp4">
+                                    <img src="https://lwi.nexon.com/m_ba/brand/char_info_btn02kr_off.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="char_wrap" id="char_load2" style="display: none;">
+                    <div class="char_sum_img"><img src="https://lwi.nexon.com/m_ba/brand/char/02_m_hoshino.png" alt="hoshino"></div>
+                    <div class="char_sum_l"><img src="https://lwi.nexon.com/m_ba/brand/char/02_l_hoshino.png" alt="hoshino"></div>
+                    <dl class="char_info">
+                        <dt><span>호시노</span><em id="char_name">HOSHINO</em></dt>
+                        <dd id="tt">성우 :<em> 花守ゆみり</em></dd>
+                        <dd>학원 : 아비도스 고등학교</dd>
+                        <dd>학년 : 3학년</dd>
+                        <dd>생일 : 1월 2일</dd>
+                        <dd>신장 : 145 cm</dd>
+                    </dl>
+                    <div class="char_info_btn">
+                        <ul>
+                            <li>
+                                <a href="https://ba.vod.nexoncdn.co.kr/audio/voice/02.mp3" onclick="pl_ad('HOSHINO')">
+                                    <img src="https://lwi.nexon.com/m_ba/brand/char_info_btn01_off.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="char_wrap" id="char_load3" style="display: none;">
+                    <div class="char_sum_img"><img src="https://lwi.nexon.com/m_ba/brand/char/03_m_serika.png" alt="serika"></div>
+                    <div class="char_sum_l"><img src="https://lwi.nexon.com/m_ba/brand/char/03_l_serika.png" alt="serika"></div>
+                    <dl class="char_info">
+                        <dt><span>세리카</span><em id="char_name">SERIKA</em></dt>
+                        <dd id="tt">성우 :<em> 大橋彩香</em></dd>
+                        <dd>학원 : 아비도스 고등학교</dd>
+                        <dd>학년 : 1학년</dd>
+                        <dd>생일 : 6월 25일</dd>
+                        <dd>신장 : 153 cm</dd>
+                    </dl>
+                    <div class="char_info_btn">
+                        <ul>
+                            <li>
+                                <a href="https://ba.vod.nexoncdn.co.kr/audio/voice/03.mp3" onclick="pl_ad('SERIKA')">
+                                    <img src="https://lwi.nexon.com/m_ba/brand/char_info_btn01_off.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="char_wrap" id="char_load4" style="display:none;">
+                    <div class="char_sum_img"><img src="https://lwi.nexon.com/m_ba/brand/char/04_m_nonomi.png" alt="nonomi"></div>
+                    <div class="char_sum_l"><img src="https://lwi.nexon.com/m_ba/brand/char/04_l_nonomi.png" alt="nonomi"></div>
+                    <dl class="char_info">
+                        <dt><span>노노미</span><em id="char_name">NONOMI</em></dt>
+                        <dd id="tt">성우 :<em> 三浦千幸</em></dd>
+                        <dd>학원 : 아비도스 고등학교</dd>
+                        <dd>학년 : 2학년</dd>
+                        <dd>생일 : 9월 1일</dd>
+                        <dd>신장 : 160 cm</dd>
+                    </dl>
+                    <div class="char_info_btn">
+                        <ul>
+                            <li>
+                                <a href="https://ba.vod.nexoncdn.co.kr/audio/voice/04.mp3" onclick="pl_ad('NONOMI')">
+                                    <img src="https://lwi.nexon.com/m_ba/brand/char_info_btn01_off.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sum_list">
+                    <ul class="sum_dot" style="margin-left: 0px;">
+                        <li onclick="choice_char1()">
+                            <img src="https://lwi.nexon.com/m_ba/brand/char/01_s_shiroko.png" alt="" class="mCS_img_loaded">
+                        </li>
+                        <li onclick="choice_char2()">
+                            <img src="https://lwi.nexon.com/m_ba/brand/char/02_s_hoshino.png" alt="" class="mCS_img_loaded">
+                        </li>
+                        <li onclick="choice_char3()">
+                            <img src="https://lwi.nexon.com/m_ba/brand/char/03_s_serika.png" alt="" class="mCS_img_loaded">
+                        </li>
+                        <li onclick="choice_char4()">
+                            <img src="https://lwi.nexon.com/m_ba/brand/char/04_s_nonomi.png" alt="" class="mCS_img_loaded">
+                        </li>
+                    </ul>
+                </div>
+                <span class="prev_char">
+                    <a href="#a" onclick="choice_sec4()">
+                        <img src="https://lwi.nexon.com/m_ba/brand/prev_char_off.png" alt="" class="mCS_img_loaded">
+                    </a>
+                </span> 
+                <span class="next_char">
+                    <a href="#a" onclick="choice_sec2()">
+                        <img src="https://lwi.nexon.com/m_ba/brand/next_char_off.png" alt="" class="mCS_img_loaded">
+                    </a>
+                </span>
+            </div>
+        </div>
+    
+        <div class="frame_tab" id="tab_job2" style="display:block;" data-aos="fade-up" data-aos-delay="250">
+            <div class="char_info_wrap_2" id="job2">
+                <div class="char_wrap" id="char_load1" style="display:block;">
+                    <div class="char_sum_img"><img src="https://lwi.nexon.com/m_ba/brand/char/05_m_hina.png" alt="hina"></div>
+                    <div class="char_sum_l"><img src="https://lwi.nexon.com/m_ba/brand/char/05_l_hina.png" alt="hina"></div>
+                    <dl class="char_info">
+                        <dt><span>히나</span><em id="char_name">HINA</em></dt>
+                        <dd id="tt">성우 :<em> 広橋涼</em></dd>
+                        <dd>학원 : 게헨나 학원</dd>
+                        <dd>학년 : 3학년</dd>
+                        <dd>생일 : 2월 19일</dd>
+                        <dd>신장 : 142 cm</dd>
+                    </dl>
+                    <div class="char_info_btn">
+                        <ul>
+                            <li>
+                                <a href="https://ba.vod.nexoncdn.co.kr/audio/voice/05.mp3" onclick="pl_ad('HINA')">
+                                    <img src="https://lwi.nexon.com/m_ba/brand/char_info_btn01_off.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="char_wrap" id="char_load2" style="display:none;">
+                    <div class="char_sum_img"><img src="https://lwi.nexon.com/m_ba/brand/char/06_m_iori.png" alt="iori"></div>
+                    <div class="char_sum_l"><img src="https://lwi.nexon.com/m_ba/brand/char/06_l_iori.png" alt="iori"></div>
+                    <dl class="char_info">
+                        <dt><span>이오리</span><em id="char_name">IORI</em></dt>
+                        <dd id="tt">성우 :<em> 佐倉綾音</em></dd>
+                        <dd>학원 : 게헨나 학원</dd>
+                        <dd>학년 : 2학년</dd>
+                        <dd>생일 : 11월 8일</dd>
+                        <dd>신장 : 157 cm</dd>
+                    </dl>
+                    <div class="char_info_btn">
+                        <ul>
+                            <li>
+                                <a href="https://ba.vod.nexoncdn.co.kr/audio/voice/06.mp3" onclick="pl_ad('IORI')">
+                                    <img src="https://lwi.nexon.com/m_ba/brand/char_info_btn01_off.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="char_wrap" id="char_load3" style="display:none;">
+                    <div class="char_sum_img"><img src="https://lwi.nexon.com/m_ba/brand/char/07_m_aru.png" alt="aru"></div>
+                    <div class="char_sum_l"><img src="https://lwi.nexon.com/m_ba/brand/char/07_l_aru.png" alt="aru"></div>
+                    <dl class="char_info">
+                        <dt><span>아루</span><em id="char_name">ARU</em></dt>
+                        <dd id="tt">성우 :<em> 近藤玲奈</em></dd>
+                        <dd>학원 : 게헨나 학원</dd>
+                        <dd>학년 : 2학년</dd>
+                        <dd>생일 : 3월 12일</dd>
+                        <dd>신장 : 160 cm</dd>
+                    </dl>
+                    <div class="char_info_btn">
+                        <ul>
+                            <li>
+                                <a href="https://ba.vod.nexoncdn.co.kr/audio/voice/07.mp3" onclick="pl_ad('ARU')">
+                                    <img src="https://lwi.nexon.com/m_ba/brand/char_info_btn01_off.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://ba.vod.nexoncdn.co.kr/bg/char07_video.mp4">
+                                    <img src="https://lwi.nexon.com/m_ba/brand/char_info_btn02kr_off.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="char_wrap" id="char_load4" style="display:none;">
+                    <div class="char_sum_img"><img src="https://lwi.nexon.com/m_ba/brand/char/08_m_mutsuki.png" alt="mutsuki"></div>
+                    <div class="char_sum_l"><img src="https://lwi.nexon.com/m_ba/brand/char/08_l_mutsuki.png" alt="mutsuki"></div>
+                    <dl class="char_info">
+                        <dt><span>무츠키</span><em id="char_name">MUTSUKI</em></dt>
+                        <dd id="tt">성우 :<em> 大久保瑠美</em></dd>
+                        <dd>학원 : 게헨나 학원</dd>
+                        <dd>학년 : 2학년</dd>
+                        <dd>생일 : 7월 29일</dd>
+                        <dd>신장 : 144 cm</dd>
+                    </dl>
+                    <div class="char_info_btn">
+                        <ul>
+                            <li><a href="https://ba.vod.nexoncdn.co.kr/audio/voice/08.mp3" onclick="pl_ad('MUTSUKI')">
+                                <img src="https://lwi.nexon.com/m_ba/brand/char_info_btn01_off.png" alt="">
+                            </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="sum_list">
+                    <ul class="sum_dot" style="margin-left: 0px;">
+                        <li onclick="choice_char5()">
+                            <img src="https://lwi.nexon.com/m_ba/brand/char/05_s_hina.png" alt="" class="mCS_img_loaded">
+                        </li>
+                        <li onclick="choice_char6()">
+                            <img src="https://lwi.nexon.com/m_ba/brand/char/06_s_iori.png" alt="" class="mCS_img_loaded">
+                        </li>
+                        <li onclick="choice_char7()">
+                            <img src="https://lwi.nexon.com/m_ba/brand/char/07_s_aru.png" alt="" class="mCS_img_loaded">
+                        </li>
+                        <li onclick="choice_char8()">
+                            <img src="https://lwi.nexon.com/m_ba/brand/char/08_s_mutsuki.png" alt="" class="mCS_img_loaded">
+                        </li>
+                    </ul>
+                </div>
+                <span class="prev_char">
+                    <a href="#a" onclick="choice_sec1()">
+                        <img src="https://lwi.nexon.com/m_ba/brand/prev_char_off.png" alt="" class="mCS_img_loaded">
+                    </a>
+                </span> 
+                <span class="next_char">
+                    <a href="#a" onclick="choice_sec3()">
+                        <img src="https://lwi.nexon.com/m_ba/brand/next_char_off.png" alt="" class="mCS_img_loaded">
+                    </a>
+                </span>
+            </div>
+        </div>
+    
+        <div class="frame_tab" id="tab_job3" style="display:none;" data-aos="fade-up" data-aos-delay="250">
+            <div class="char_info_wrap_3" id="job3">
+                <div class="char_wrap" id="char_load1" style="display:none;">
+                    <div class="char_sum_img"><img src="https://lwi.nexon.com/m_ba/brand/char/09_m_yuuka.png" alt="yuuka"></div>
+                    <div class="char_sum_l"><img src="https://lwi.nexon.com/m_ba/brand/char/09_l_yuuka.png" alt="yuuka"></div>
+                    <dl class="char_info">
+                        <dt><span>유우카</span><em id="char_name">YUUKA</em></dt>
+                        <dd id="tt">성우 :<em> 春花らん</em></dd>
+                        <dd>학원 : 밀레니엄 사이언스 스쿨</dd>
+                        <dd>학년 : 2학년</dd>
+                        <dd>생일 : 3월 14일</dd>
+                        <dd>신장 : 156 cm</dd>
+                    </dl>
+                    <div class="char_info_btn">
+                        <ul>
+                            <li><a href="https://ba.vod.nexoncdn.co.kr/audio/voice/09.mp3" onclick="pl_ad('YUUKA')">
+                                <img src="https://lwi.nexon.com/m_ba/brand/char_info_btn01_off.png" alt="">
+                            </a>
+                            </li>
+                            <li><a href="https://ba.vod.nexoncdn.co.kr/bg/char09_video.mp4">
+                                <img src="https://lwi.nexon.com/m_ba/brand/char_info_btn02kr_off.png" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="char_wrap" id="char_load2" style="display:none;">
+                    <div class="char_sum_img"><img src="https://lwi.nexon.com/m_ba/brand/char/10_m_neru.png" alt="neru"></div>
+                    <div class="char_sum_l"><img src="https://lwi.nexon.com/m_ba/brand/char/10_l_neru.png" alt="neru"></div>
+                    <dl class="char_info">
+                        <dt><span>네루</span><em id="char_name">NERU</em></dt>
+                        <dd id="tt">성우 :<em> 小清水亞美</em></dd>
+                        <dd>학원 : 밀레니엄 사이언스 스쿨</dd>
+                        <dd>학년 : 3학년</dd>
+                        <dd>생일 : 8월 17일</dd>
+                        <dd>신장 : 146 cm</dd>
+                    </dl>
+                    <div class="char_info_btn">
+                        <ul>
+                            <li>
+                                <a href="https://ba.vod.nexoncdn.co.kr/audio/voice/10.mp3" onclick="pl_ad('NERU')">
+                                    <img src="https://lwi.nexon.com/m_ba/brand/char_info_btn01_off.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="char_wrap" id="char_load3" style="display:none;">
+                    <div class="char_sum_img"><img src="https://lwi.nexon.com/m_ba/brand/char/11_m_karin.png" alt="karin"></div>
+                    <div class="char_sum_l"><img src="https://lwi.nexon.com/m_ba/brand/char/11_l_karin.png" alt="karin"></div>
+                    <dl class="char_info">
+                        <dt><span>카린</span><em id="char_name">KARIN</em></dt>
+                        <dd id="tt">성우 :<em> 沼倉愛美</em></dd>
+                        <dd>학원 : 밀레니엄 사이언스 스쿨</dd>
+                        <dd>학년 : 2학년</dd>
+                        <dd>생일 : 2월 2일</dd>
+                        <dd>신장 : 170 cm</dd>
+                    </dl>
+                    <div class="char_info_btn">
+                        <ul>
+                            <li>
+                                <a href="https://ba.vod.nexoncdn.co.kr/audio/voice/11.mp3" onclick="pl_ad('KARIN')">
+                                    <img src="https://lwi.nexon.com/m_ba/brand/char_info_btn01_off.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="char_wrap" id="char_load4" style="display:none;">
+                    <div class="char_sum_img"><img src="https://lwi.nexon.com/m_ba/brand/char/12_m_akane.png" alt="akane"></div>
+                    <div class="char_sum_l"><img src="https://lwi.nexon.com/m_ba/brand/char/12_l_akane.png" alt="akane"></div>
+                    <dl class="char_info">
+                        <dt><span>아카네</span><em id="char_name">AKANE</em></dt>
+                        <dd id="tt">성우 :<em> 原由実</em></dd>
+                        <dd>학원 : 밀레니엄 사이언스 스쿨</dd>
+                        <dd>학년 : 2학년</dd>
+                        <dd>생일 : 4월 1일</dd>
+                        <dd>신장 : 164 cm</dd>
+                    </dl>
+                    <div class="char_info_btn">
+                        <ul>
+                            <li>
+                                <a href="https://ba.vod.nexoncdn.co.kr/audio/voice/12.mp3" onclick="pl_ad('AKANE')">
+                                    <img src="https://lwi.nexon.com/m_ba/brand/char_info_btn01_off.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="sum_list">
+                    <ul class="sum_dot" style="margin-left: 0px;">
+                        <li onclick="choice_char9()">
+                            <img src="https://lwi.nexon.com/m_ba/brand/char/09_s_yuuka.png" alt="" class="mCS_img_loaded">
+                        </li>
+                        <li onclick="choice_char10()">
+                            <img src="https://lwi.nexon.com/m_ba/brand/char/10_s_neru.png" alt=""class="mCS_img_loaded">
+                        </li>
+                        <li onclick="choice_char11()">
+                            <img src="https://lwi.nexon.com/m_ba/brand/char/11_s_karin.png" alt=""class="mCS_img_loaded">
+                        </li>
+                        <li onclick="choice_char12()">
+                            <img src="https://lwi.nexon.com/m_ba/brand/char/12_s_akane.png" alt=""class="mCS_img_loaded">
+                        </li>
+                    </ul>
+                </div> 
+                <span class="prev_char">
+                    <a href="#a" onclick="choice_sec2()">
+                        <img src="https://lwi.nexon.com/m_ba/brand/prev_char_off.png" alt="" class="mCS_img_loaded">
+                    </a>
+                </span> 
+                <span class="next_char">
+                    <a href="#a" onclick="choice_sec4()">
+                        <img src="https://lwi.nexon.com/m_ba/brand/next_char_off.png" alt="" class="mCS_img_loaded">
+                    </a>
+                </span>
+            </div>
+        </div>
+    
+        <div class="frame_tab" id="tab_job4" style="display:none;" data-aos="fade-up" data-aos-delay="250">
+            <div class="char_info_wrap_4" id="job4">
+                <div class="char_wrap" id="char_load1" style="display:none;">
+                    <div class="char_sum_img"><img src="https://lwi.nexon.com/m_ba/brand/char/13_m_hihumi.png" alt="hihumi"></div>
+                    <div class="char_sum_l"><img src="https://lwi.nexon.com/m_ba/brand/char/13_l_hihumi.png" alt="hihumi"></div>
+                    <dl class="char_info">
+                        <dt><span>히후미</span><em id="char_name">HIFUMI</em></dt>
+                        <dd id="tt">성우 :<em> 本渡楓</em></dd>
+                        <dd>학원 : 트리니티 종합학원</dd>
+                        <dd>학년 : 2학년</dd>
+                        <dd>생일 : 11월 27일</dd>
+                        <dd>신장 : 158 cm</dd>
+                    </dl>
+                    <div class="char_info_btn">
+                        <ul>
+                            <li>
+                                <a href="https://ba.vod.nexoncdn.co.kr/audio/voice/13.mp3" onclick="pl_ad('HIFUMI')">
+                                    <img src="https://lwi.nexon.com/m_ba/brand/char_info_btn01_off.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://ba.vod.nexoncdn.co.kr/bg/char13_video.mp4">
+                                    <img src="https://lwi.nexon.com/m_ba/brand/char_info_btn02kr_off.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="char_wrap" id="char_load2" style="display:none;">
+                    <div class="char_sum_img"><img src="https://lwi.nexon.com/m_ba/brand/char/14_m_tsurugi.png" alt="tsurugi"></div>
+                    <div class="char_sum_l"><img src="https://lwi.nexon.com/m_ba/brand/char/14_l_tsurugi.png" alt="tsurugi"></div>
+                    <dl class="char_info">
+                        <dt><span>츠루기</span><em id="char_name">TSURUGI</em></dt>
+                        <dd id="tt">성우 :<em> 小林ゆう</em></dd>
+                        <dd>학원 : 트리니티 종합학원</dd>
+                        <dd>학년 : 3학년</dd>
+                        <dd>생일 : 6월 24일</dd>
+                        <dd>신장 : 162 cm</dd>
+                    </dl>
+                    <div class="char_info_btn">
+                        <ul>
+                            <li>
+                                <a href="https://ba.vod.nexoncdn.co.kr/audio/voice/14.mp3" onclick="pl_ad('TSURUGI')">
+                                    <img src="https://lwi.nexon.com/m_ba/brand/char_info_btn01_off.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="char_wrap" id="char_load3" style="display:none;">
+                    <div class="char_sum_img"><img src="https://lwi.nexon.com/m_ba/brand/char/15_m_hasumi.png" alt="hasumi"></div>
+                    <div class="char_sum_l"><img src="https://lwi.nexon.com/m_ba/brand/char/15_l_hasumi.png" alt="hasumi"></div>
+                    <dl class="char_info">
+                        <dt><span>하스미</span><em id="char_name">HASUMI</em></dt>
+                        <dd id="tt">성우 :<em> 瀨戶麻沙美</em></dd>
+                        <dd>학원 : 트리니티 종합학원</dd>
+                        <dd>학년 : 3학년</dd>
+                        <dd>생일 : 12월 12일</dd>
+                        <dd>신장 : 179 cm</dd>
+                    </dl>
+                    <div class="char_info_btn">
+                        <ul>
+                            <li>
+                                <a href="https://ba.vod.nexoncdn.co.kr/audio/voice/16.mp3" onclick="pl_ad('HASUMI')">
+                                    <img src="https://lwi.nexon.com/m_ba/brand/char_info_btn01_off.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sum_list">
+                    <ul class="sum_dot" style="margin-left: 0px;">
+                        <li onclick="choice_char13()">
+                            <img src="https://lwi.nexon.com/m_ba/brand/char/13_s_hihumi.png" alt=""class="mCS_img_loaded">
+                        </li>
+                        <li onclick="choice_char14()">
+                            <img src="https://lwi.nexon.com/m_ba/brand/char/14_s_tsurugi.png" alt="" class="mCS_img_loaded">
+                        </li>
+                        <li onclick="choice_char15()">
+                            <img src="https://lwi.nexon.com/m_ba/brand/char/15_s_hasumi.png" alt=""class="mCS_img_loaded">
+                        </li>
+                    </ul>
+                </div>
+                <span class="prev_char">
+                    <a href="#a" onclick="choice_sec3()">
+                        <img src="https://lwi.nexon.com/m_ba/brand/prev_char_off.png" alt="" class="mCS_img_loaded">
+                    </a>
+                </span> 
+                <span class="next_char">
+                    <a href="#a" onclick="choice_sec1()">
+                        <img src="https://lwi.nexon.com/m_ba/brand/next_char_off.png" alt="" class="mCS_img_loaded">
+                    </a>
+                </span>
+            </div>
+        </div>
+        <div class="tab_link1">
+            <ul>
+                <li class="tab01" onclick="choice_sec1()"><a href="#a">tab01</a></li>
+                <li class="tab02" onclick="choice_sec2()"><a href="#a">tab02</a></li>
+                <li class="tab03" onclick="choice_sec3()"><a href="#a">tab03</a></li>
+                <li class="tab04" onclick="choice_sec4()"><a href="#a">tab04</a></li>
+            </ul>
+        </div>
+        <span class="back_btn">
+            <a href="#a" onclick="close_page()">
+                <img src="https://lwi.nexon.com/m_ba/brand/back_btn_off.png" alt="">
+            </a>
+        </span>
+        <div id="ba_footer">
+            <div><a href="#a"><img src="https://lwi.nexon.com/m_ba/brand/f_logo.png" id="nexon_logo_1"></a></div>
+            <img src="https://lwi.nexon.com/m_ba/brand/f_line.png" id="footer_between">
+    
+            <div><a href="#a"><img src="https://nxm-clw-cdn.dn.nexoncdn.co.kr/bluearchive/img/brand/f_logo3.png" id="nexon_logo_2"></a></div>
+            <img src="https://lwi.nexon.com/m_ba/brand/f_line.png" id="footer_between">
+    
+            <div><a href="https://member.nexon.com/policy/privacy.aspx" id="private">개인정보처리방침</a></div>
+    
+            <div id="copyrights">© 2021 NEXON Korea Corp. & NEXON GAMES Co., Ltd. All Rights Reserved.</div>
+        </div>
+</div>
+    <div id="image-container">
+        <video src="img/흰색.mp4" autoplay="autoplay" muted="muted" style="height: 960px; width : 100%"></video> 
+    </div>
+    <script>
+         const htmlFiles = [
+            'Ba블루아카메인.html',
+            'Ba게임소개 세계관.html',
+            'Ba학생명부.html',
+            'Ba캐릭터소개2.html',
+            'BaMedia1.html',
+            'BaMedia2.html',
+            'Ba커뮤니티.html'
+        ];
+        const job1 = document.getElementById("tab_job1");
+        const job2 = document.getElementById("tab_job2");
+        const job3 = document.getElementById("tab_job3");
+        const job4 = document.getElementById("tab_job4");
+        const imageContainer = document.getElementById('image-container');
+        const images = imageContainer.getElementsByTagName('video');
+        let currentIndex = 0;
+        AOS.init();
+    </script>
+</body>
+</html>

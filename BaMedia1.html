@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ko" class="layoutPC ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>media</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <link href="resources/css/baMediaCSS1.css" rel="stylesheet">
+  <link href="resources/css/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="resources/css/Navi3.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <style>
+      #image-container {
+        position: relative; 
+        width: 100%;
+        height: 100%;
+      }
+      #image-container video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display:none;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+      }
+  </style>
+</head>
+
+<body class="kr" style="height: 60em;">
+<div id="page05" style="display:block;">
+   <!-- N A V I B A R -->
+   <header>
+    <div class="ba_navi_wrap">
+        <div>
+            <a href="Ba블루아카메인.html"><img src="img/logo.png" id="Blue_Archive_logo"></a>
+        </div>
+        <nav>
+            <ul class="navi clear">
+                <div id="dim"></div>
+                <li>
+                    <a href="Ba게임소개 세계관.html" id="ba_navi_introduce"><span>게임소개</span></a>
+                    <ul>
+                        <li style="margin-top: 0px;">
+                            <a href="Ba게임소개 세계관.html">세계관</a>
+                        </li>
+                        <li style="margin-top: -18px;">
+                            <a href="Ba학생명부.html">학생명부</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="BaMedia1.html" id="ba_navi_media"><span>미디어</span></a>
+                    <ul>
+                        <li style="margin-top: 0px;">
+                            <a href="BaMedia1.html">영상</a>
+                        </li>
+                        <li style="margin-top: -18px;">
+                            <a href="BaMedia2.html">일러스트</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="Ba커뮤니티.html" id="ba_navi_community"><span>커뮤니티</span></a>
+                    <ul>
+                        <li style="margin-top: 0px;">
+                            <a href="https://forum.nexon.com/bluearchive" target="blank">공식 커뮤니티
+                                <em><img src="https://lwi.nexon.com/m_ba/brand/blank2.png" style="width: 12px;"></em>
+                            </a>
+                        </li>
+                        <li style="margin-top: -18px;">
+                            <a href="https://www.youtube.com/channel/UCj0iColXMAjPA92rH-AXVGQ" target="blank">공식 YouTube
+                                <em><img src="https://lwi.nexon.com/m_ba/brand/blank2.png" style="width: 12px;"></em>
+                            </a>
+                        </li>
+                        <li style="margin-top: -18px;">
+                            <a href="https://twitter.com/KR_BlueArchive" target="blank">공식 Twitter
+                                <em><img src="https://lwi.nexon.com/m_ba/brand/blank2.png" style="width: 12px;"></em>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="Ba쿠폰함.html" id="ba_navi_coupon" target="blank"><span>쿠폰함
+                        <em>
+                            <img src="https://lwi.nexon.com/m_ba/brand/blank2.png" style="width: 14px;">
+                        </em></span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="ba_navi_store">
+            <div>
+                <a href="https://apps.apple.com/kr/app/id1571873795"><img src="https://lwi.nexon.com/m_ba/brand/gnb_app01.png"></a>
+            </div>
+            <div>
+                <a href="https://play.google.com/store/apps/details?id=com.nexon.bluearchive&referrer=adjust_reftag%3DcPZv6PBRGCDLq%26utm_source%3DNxKR_KR_Official%26utm_campaign%3DOfficial_Brandpage%26utm_content%3DKR_AOS"><img src="https://lwi.nexon.com/m_ba/brand/gnb_app02.png"></a>
+            </div>
+            <div>
+                <a href="https://m.onestore.co.kr/mobilepoc/apps/appsDetail.omp?prodId=0000758646&scYn=Y&referrer=adjust_reftag%3DcQsv21AvvHC3P%26utm_source%3DNxKR_KR_Officialpage%26utm_campaign%3DOfficialpage%26utm_content%3DOnestore"><img src="https://lwi.nexon.com/m_ba/brand/gnb_app03.png"></a>
+            </div>
+        </div>
+        <div class="ba_navi_links">
+            <div>
+                <a href="https://www.youtube.com/channel/UCj0iColXMAjPA92rH-AXVGQ"><img src="https://lwi.nexon.com/m_ba/brand/gnb01_off.png"></a>
+            </div>
+            <div>
+                <a href="https://twitter.com/KR_BlueArchive"><img src="https://lwi.nexon.com/m_ba/brand/gnb02_off.png"></a>
+            </div>
+            <div>
+                <a href="https://forum.nexon.com/bluearchive/"><img src="https://lwi.nexon.com/m_ba/brand/gnb03_off.png"></a>
+            </div>
+            <div>
+                <a href="">
+                    <img src="https://lwi.nexon.com/m_ba/brand/gnb04_off.png"></div>
+                </a>
+            <div>
+                <a href="">
+                    <img src="https://nxm-clw-cdn.dn.nexoncdn.co.kr/bluearchive/img/brand/gnb05_off.png" id="music_off">
+                    <img src="https://nxm-clw-cdn.dn.nexoncdn.co.kr/bluearchive/img/brand/gnb06_on.png" id="music_on">
+                </a>
+            </div>
+        </div>
+    </div>
+  </header>
+
+  <div id="wrap" class="page_4 load" style="height: 65em; min-height: 68em;">
+    <section id="sec10" data-page="2" class="sec10 mCustomScrollbar _mCS_6 active load" style="width: 100%; height: 60em;">
+      <div id="mCSB_6" class="mCustomScrollBox" style="max-height: none;" tabindex="0">
+        <div id="mCSB_6_container" class="mCSB_container" style="position: relative; top: 0px; left: 0px;" dir="ltr">
+          <span class="l_title">
+            <span id="do">도서관</span>
+          </span>
+          <!-- <div class="tab_wrap" style="left: 297.406px;">
+            <span class="l"></span>
+            <ul class=tab_list>
+              <li>
+                <a href="BaMedia1.html">영상</a>
+              </li>
+              <li>
+                <a href="BaMedia2.html">일러스트</a>
+              </li>
+            </ul>
+            <span class="r"></span>
+          </div> -->
+
+          <div class="sction09_con" style="min-height: 68em;">
+            <div class="center_wrap">
+              <h2 class="tt_h2">- 미디어 -</h2>
+              <h1 class="tt_h1">영상</h1>
+              <div class="top_bg2"></div>
+            </div>
+            
+            <div class="movie_bn_wrap" data-aos="fade-down" data-aos-delay="250">
+              <ul class="movie_bn">
+                <li>
+                  <a href="#a" onclick="open_mv('https://www.youtube.com/embed/3nAs-iAPoeM?rel=0')">
+                    <img src="images2/211129_media_01_a2398_kr.jpg" alt class="mCS_img_loaded">
+                    <span>
+                      <img src="images2/mv_play_btn.png" class="mCS_img_loaded" style="margin-top: 200px; margin-left: 438px;">
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#a" onclick="open_mv('https://www.youtube.com/embed/aT5ES5e6Cyg?rel=0')">
+                    <img src="images2/211129_media_02_a2398_kr.jpg" alt="" class="mCS_img_loaded">
+                    <span>
+                      <img src="images2/mv_play_btn.png" class="mCS_img_loaded" style="margin-top: 200px; margin-left: 438px;">
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#a" onclick="open_mv('https://www.youtube.com/embed/nAbYPA75ObI?rel=0')">
+                    <img src="images2/211129_media_03_a2398_kr.jpg" alt="" class="mCS_img_loaded">
+                    <span>
+                      <img src="images2/mv_play_btn.png" class="mCS_img_loaded" style="margin-top: 200px; margin-left: 438px;">
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#a" onclick="open_mv('https://www.youtube.com/embed/E7I21pI878U?rel=0')">
+                    <img src="images2/211129_media_04_a2398_kr.jpg" alt="" class="mCS_img_loaded">
+                    <span>
+                      <img src="images2/mv_play_btn.png" class="mCS_img_loaded" style="margin-top: 200px; margin-left: 438px;">
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#a" onclick="open_mv('https://www.youtube.com/embed/qDD9mNxtRMw?rel=0')">
+                    <img src="images2/211129_media_05_a2398_kr.jpg" alt="" class="mCS_img_loaded">
+                    <span>
+                      <img src="images2/mv_play_btn.png" class="mCS_img_loaded" style="margin-top: 200px; margin-left: 438px;">
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#a" onclick="open_mv('https://www.youtube.com/embed/oFpMS0PL3WA?rel=0')">
+                    <img src="images2/media04.png" alt="" class="mCS_img_loaded">
+                    <span>
+                      <img src="images2/mv_play_btn.png" class="mCS_img_loaded" style="margin-top: 200px; margin-left: 438px;">
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#a" onclick="open_mv('https://www.youtube.com/embed/bNkvGKqdwt0?rel=0')">
+                    <img src="images2/media05.png" alt="" class="mCS_img_loaded">
+                    <span>
+                      <img src="images2/mv_play_btn.png" class="mCS_img_loaded" style="margin-top: 200px; margin-left: 438px;">
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#a" onclick="open_mv('https://www.youtube.com/embed/IEyGBzjl7RE?rel=0')">
+                    <img src="images2/media01.png" alt="" class="mCS_img_loaded">
+                    <span>
+                      <img src="images2/mv_play_btn.png" class="mCS_img_loaded" style="margin-top: 200px; margin-left: 438px;">
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#a" onclick="open_mv('https://www.youtube.com/embed/2TCqIaVV2LU?rel=0')">
+                    <img src="images2/media02.png" alt="" class="mCS_img_loaded">
+                    <span>
+                      <img src="images2/mv_play_btn.png" class="mCS_img_loaded" style="margin-top: 200px; margin-left: 438px;">
+                    </span>
+                  </a>
+                </li>
+              </ul>
+              <span class="bn_cnt2">1/9</span>
+              <span class="prev">
+                <a href="#a" onclick="prev_movie()">
+                  <img src="images2/prev_btn_off.png" alt="" class="mCS_img_loaded" data-aos="fade-right" data-aos-delay="250">
+                </a>
+              </span>
+              <span class="next">
+                <a href="#a" onclick="next_movie()">
+                  <img src="images2/next_btn_off.png" alt="" class="mCS_img_loaded" data-aos="fade-left" data-aos-delay="250">
+                </a>
+              </span>
+            </div>
+            <p class="movie_info"> 더 다양한 영상은 유튜브 채널에서 확인해주세요.</p>
+            <span class="movie_more_btn">
+              <a href="https://www.youtube.com/channel/UCj0iColXMAjPA92rH-AXVGQ" target="_blank">영상 자세히 보기</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="mv_popup" id="mv_popup" style="display: none;">
+      <div class="pop_iframe">
+        <span class="pop_logo">
+          <img src="images2/pop_logo.png" alt>
+        </span>
+        <span class="pop_close">
+          <a href="#a" onclick="close_mv()">
+          <img src="images2/pop_close.png" alt="">
+        </a>
+      </span>
+      </div>
+    </div>
+  </div>
+
+  <div id="ba_footer">
+    <div><a href="#a"><img src="https://lwi.nexon.com/m_ba/brand/f_logo.png" id="nexon_logo_1"></a></div>
+    <img src="https://lwi.nexon.com/m_ba/brand/f_line.png" id="footer_between">
+
+    <div><a href="#a"><img src="https://nxm-clw-cdn.dn.nexoncdn.co.kr/bluearchive/img/brand/f_logo3.png" id="nexon_logo_2"></a></div>
+    <img src="https://lwi.nexon.com/m_ba/brand/f_line.png" id="footer_between">
+
+    <div><a href="https://member.nexon.com/policy/privacy.aspx" id="private">개인정보처리방침</a></div>
+
+    <div id="copyrights">© 2021 NEXON Korea Corp. & NEXON GAMES Co., Ltd. All Rights Reserved.</div>
+  </div>
+</div>
+
+  <script>
+    // function prev_movie(){
+
+    // }
+    // function next_movie(){
+
+    // }
+    function open_mv(src){
+
+      const mv_popup = document.getElementById("mv_popup");
+      mv_popup.style.display = "block";
+      mv_popup.getElementsByTagName("iframe")[0]?.remove();
+      const iframe = document.createElement("iframe");
+      iframe.src = src;
+      mv_popup.appendChild(iframe);
+      
+      iframe.setAttribute("style", "width: 70%; height: 60%; float: left; position: absolute; left:14%; top: 20%; ");
+
+
+    }
+    function close_mv(){
+      const mv_popup = document.getElementById("mv_popup");
+      mv_popup.style.display = "none";
+
+    }
+    /* var currentSlide = 0; // 현재 슬라이드 인덱스
+
+      function prev_movie() {
+      var slides = $(".movie_bn li");
+      var totalSlides = slides.length;
+      slides.eq(currentSlide).removeClass("active").addClass("before"); // 현재 슬라이드 클래스 변경
+      currentSlide = (currentSlide - 1) % totalSlides; // 다음 슬라이드 인덱스 계산
+      slides.eq(currentSlide).removeClass("before").addClass("active"); // 다음 슬라이드 클래스 변경
+    }
+
+    // 다음 이미지로 이동하는 함수
+    function next_movie() {
+      var slides = $(".movie_bn li");
+      var totalSlides = slides.length;
+      slides.eq(currentSlide).removeClass("active").addClass("next"); // 현재 슬라이드 클래스 변경
+      currentSlide = (currentSlide + 1 + totalSlides) % totalSlides; // 이전 슬라이드 인덱스 계산
+      slides.eq(currentSlide).removeClass("next").addClass("active"); // 이전 슬라이드 클래스 변경
+    } */
+
+    var currentSlide = 0; // 현재 슬라이드 인덱스
+    var totalSlides = $(".movie_bn li").length; // 전체 슬라이드 개수
+    $(function(){
+      var slides = $(".movie_bn li");
+      slides.each(function(){
+        $(this).hide();
+
+      })
+      $(slides[0]).show();
+    })
+    // 이전 이미지로 이동하는 함수
+    function prev_movie() {
+      var slides = $(".movie_bn li");
+      slides.eq(currentSlide).hide(); // 현재 슬라이드 감추기
+      currentSlide = (currentSlide - 1 + totalSlides) % totalSlides; // 이전 슬라이드 인덱스 계산
+      slides.eq(currentSlide).show(); // 이전 슬라이드 표시
+      updateCount(); // 카운트 업데이트
+    }
+
+    // 다음 이미지로 이동하는 함수
+    function next_movie() {
+      var slides = $(".movie_bn li");
+      console.log(slides)
+      slides.eq(currentSlide).hide(); // 현재 슬라이드 감추기
+      currentSlide = (currentSlide + 1) % totalSlides; // 다음 슬라이드 인덱스 계산
+      console.log(currentSlide)
+      slides.eq(currentSlide).show(); // 다음 슬라이드 표시
+      updateCount(); // 카운트 업데이트
+    }
+
+    // 카운트 업데이트 함수
+    function updateCount() {
+      var countElement = $(".bn_cnt2");
+      countElement.text((currentSlide + 1) + "/" + totalSlides); // 현재 슬라이드 카운트 업데이트
+    }
+
+    
+  </script>
+
+<div id="image-container">
+  <video src="img/흰색.mp4" autoplay="autoplay" muted="muted" style="width: 1920px; height: 1080px"></video> 
+</div>
+
+<script>
+  const imageContainer = document.getElementById('image-container');
+  const images = imageContainer.getElementsByTagName('video');
+  let currentIndex = 0;
+  const htmlFiles = [
+    'Ba블루아카메인.html',
+    'Ba게임소개 세계관.html',
+    'Ba학생명부.html',
+    'Ba캐릭터소개1.html',
+    'BaMedia1.html',
+    'BaMedia2.html',
+    'Ba커뮤니티.html'
+  ];
+  function loadHTMLFile(index) {
+      return htmlFiles[index];
+  }
+  let currentFileIndex = 4;
+  function handleWheel(event) {
+      const page05 = document.getElementById("page05");
+      page05.style.display='none';
+      if (event.deltaY > 0) {
+          currentFileIndex++;
+          if (currentFileIndex >= 7) {
+              currentFileIndex = 0;
+          }
+      } else {
+          currentFileIndex--;
+          if (currentFileIndex < 0) {
+              currentFileIndex = 6;
+          }
+      }
+      showNextImage();
+      setInterval(showNextImage, 1900);
+      loadHTMLFile(currentFileIndex);
+      setTimeout(function() {
+          location.href=(loadHTMLFile(currentFileIndex));
+      },1900);
+  }
+  document.addEventListener('wheel', handleWheel)
+
+  function showNextImage() {
+      currentIndex = (currentIndex+1) % images.length;
+      images[currentIndex].style.display = 'block';
+      images[currentIndex].style.opacity = '1';
+  }
+  AOS.init();
+</script>
+  
+  
+</body>
+</html>

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>블루아카이브Main</title>
+    <link rel="stylesheet" href="resources/css/Navi.css">
+    <link rel="stylesheet" href="resources/css/content.css">
+    <link rel="stylesheet" href="resources/css/footer.css">
+    <script src="resources/js/메인.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style>
+        body{
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            width: 100%;
+            height: 100%;
+        }
+        body::-webkit-scrollbar{
+            display: none;
+        }
+        #image-container {
+            position: relative; 
+            width: 100%;
+            height: 100%;
+        }
+        #image-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display:none;
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="page01" style="display:block;" >    
+        <!-- N A V I B A R -->
+        <header>
+            <div class="ba_navi_wrap">
+                <div>
+                    <a href="Ba블루아카메인.html"><img src="img/logo.png" id="Blue_Archive_logo"></a>
+                </div>
+                <nav>
+                    <ul class="navi clear">
+                        <div id="dim"></div>
+                        <li>
+                            <a href="Ba게임소개 세계관.html" id="ba_navi_introduce"><span>게임소개</span></a>
+                            <ul>
+                                <li style="margin-top: 0px;">
+                                    <a href="Ba게임소개 세계관.html">세계관</a>
+                                </li>
+                                <li style="margin-top: -18px;">
+                                    <a href="Ba학생명부.html">학생명부</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="BaMedia1.html" id="ba_navi_media"><span>미디어</span></a>
+                            <ul>
+                                <li style="margin-top: 0px;">
+                                    <a href="BaMedia1.html">영상</a>
+                                </li>
+                                <li style="margin-top: -18px;">
+                                    <a href="BaMedia2.html">일러스트</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="Ba커뮤니티.html" id="ba_navi_community"><span>커뮤니티</span></a>
+                            <ul>
+                                <li style="margin-top: 0px;">
+                                    <a href="https://forum.nexon.com/bluearchive" target="blank">공식 커뮤니티
+                                        <em><img src="https://lwi.nexon.com/m_ba/brand/blank2.png" style="width: 12px;"></em>
+                                    </a>
+                                </li>
+                                <li style="margin-top: -18px;">
+                                    <a href="https://www.youtube.com/channel/UCj0iColXMAjPA92rH-AXVGQ" target="blank">공식 YouTube
+                                        <em><img src="https://lwi.nexon.com/m_ba/brand/blank2.png" style="width: 12px;"></em>
+                                    </a>
+                                </li>
+                                <li style="margin-top: -18px;">
+                                    <a href="https://twitter.com/KR_BlueArchive" target="blank">공식 Twitter
+                                        <em><img src="https://lwi.nexon.com/m_ba/brand/blank2.png" style="width: 12px;"></em>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="Ba쿠폰함.html" id="ba_navi_coupon" target="blank"><span>쿠폰함
+                                <em>
+                                    <img src="https://lwi.nexon.com/m_ba/brand/blank2.png" style="width: 14px;">
+                                </em></span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="ba_navi_store">
+                    <div>
+                        <a href="https://apps.apple.com/kr/app/id1571873795"><img src="https://lwi.nexon.com/m_ba/brand/gnb_app01.png"></a>
+                    </div>
+                    <div>
+                        <a href="https://play.google.com/store/apps/details?id=com.nexon.bluearchive&referrer=adjust_reftag%3DcPZv6PBRGCDLq%26utm_source%3DNxKR_KR_Official%26utm_campaign%3DOfficial_Brandpage%26utm_content%3DKR_AOS"><img src="https://lwi.nexon.com/m_ba/brand/gnb_app02.png"></a>
+                    </div>
+                    <div>
+                        <a href="https://m.onestore.co.kr/mobilepoc/apps/appsDetail.omp?prodId=0000758646&scYn=Y&referrer=adjust_reftag%3DcQsv21AvvHC3P%26utm_source%3DNxKR_KR_Officialpage%26utm_campaign%3DOfficialpage%26utm_content%3DOnestore"><img src="https://lwi.nexon.com/m_ba/brand/gnb_app03.png"></a>
+                    </div>
+                </div>
+                <div class="ba_navi_links">
+                    <div>
+                        <a href="https://www.youtube.com/channel/UCj0iColXMAjPA92rH-AXVGQ"><img src="https://lwi.nexon.com/m_ba/brand/gnb01_off.png"></a>
+                    </div>
+                    <div>
+                        <a href="https://twitter.com/KR_BlueArchive"><img src="https://lwi.nexon.com/m_ba/brand/gnb02_off.png"></a>
+                    </div>
+                    <div>
+                        <a href="https://forum.nexon.com/bluearchive/"><img src="https://lwi.nexon.com/m_ba/brand/gnb03_off.png"></a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <img src="https://lwi.nexon.com/m_ba/brand/gnb04_off.png"></div>
+                        </a>
+                    <div>
+                        <a href="">
+                            <img src="https://nxm-clw-cdn.dn.nexoncdn.co.kr/bluearchive/img/brand/gnb05_off.png" id="music_off">
+                            <img src="https://nxm-clw-cdn.dn.nexoncdn.co.kr/bluearchive/img/brand/gnb06_on.png" id="music_on">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- C O N T E N T -->
+        <div id="ba_content">
+            <!-- background video -->
+            <video src="https://ba.vod.nexoncdn.co.kr/bg/loop_l_kr.mp4" muted="muted" loop="loop" autoplay="autoplay" style="width: 1920px; height: 1080px"></video>
+            
+            <!-- NOTICE section -->
+            <div class="main_banner_1">
+                <div class="main_banner_1_con">
+                    <div class="main_banner_1_inner">
+                        <a href="https://forum.nexon.com/bluearchive/board_view?thread=1881343" target="_blank">
+                            <img src="https://jarvis.dn.nexoncdn.co.kr/bluearchive/gb/20221109/20221109065324835-6e8495a9217d42b49342547af3f7ed4d.jpg">
+                        </a>
+                    </div>
+                    <div class="main_banner_1_inner">
+                        <a href="https://www.youtube.com/channel/UCj0iColXMAjPA92rH-AXVGQ" target="_blank">
+                            <img src="https://jarvis.dn.nexoncdn.co.kr/bluearchive/gb/20221109/20221109065214830-0b0b6438d43e4e90bd5ad6f66cb55d4f.jpg">
+                        </a>
+                    </div>
+                    <div class="main_banner_1_inner">
+                        <a href="https://twitter.com/KR_BlueArchive" target="_blank">
+                            <img src="https://jarvis.dn.nexoncdn.co.kr/bluearchive/gb/20221109/20221109064904304-b4baba32b5d8481d9dddb876a20d20f5.jpg">
+                        </a>
+                    </div>
+                    <div class="main_banner_1_inner">
+                        <a href="https://forum.nexon.com/bluearchive/board_list?board=1038" target="_blank">
+                            <img src="https://jarvis.dn.nexoncdn.co.kr/bluearchive/gb/20221109/20221109064818495-fed09f492457425a8ae93b9eefba79e8.jpg">
+                        </a>
+                    </div>
+                    <span class="bn_title">NOTICE!</span>
+                </div>
+
+                <div class="n_navi">
+                    <button class="button-left-n" value="이미지">
+                        <img src="https://lwi.nexon.com/m_ba/brand/bn_prev_btn_off.png" style="width:30px" >
+                    </button>
+                    <button class="button-right-n">
+                        <img src="https://lwi.nexon.com/m_ba/brand/bn_next_btn_off.png" style="width:30px">
+                    </button>
+                </div>
+            </div>
+            <script>
+                $(document).ready(function(){
+                    var interval = 3000;
+                    var images = $('.main_banner_1_inner');
+                    var currentIndex = 0;
+
+                    images.eq(currentIndex).addClass('active');
+
+                    function showNextImage(){
+                        var currentImage = images.eq(currentIndex);
+                        currentImage.removeClass('active').addClass('transitioning');
+                        currentIndex = (currentIndex + 1) % images.length;
+                        var nextImage = images.eq(currentIndex);
+                        nextImage.addClass('active').addClass('transitioning');
+
+                        setTimeout(function() {
+                            currentImage.removeClass('transitioning');
+                            nextImage.removeClass('transitioning');
+                        }, 1000);
+                    }
+
+                    var slideshowInterval = setInterval(showNextImage, interval);
+
+                    $('.button-left-n').click(function(){
+                        clearInterval(slideshowInterval);
+
+                        var currentImage = images.eq(currentIndex);
+                        currentImage.removeClass('active').addClass('transitioning');
+                        currentIndex = (currentIndex - 1 + images.length) % images.length;
+                        var nextImage = images.eq(currentIndex);
+                        nextImage.addClass('active').addClass('transitioning');
+
+                        setTimeout(function() {
+                            currentImage.removeClass('transitioning');
+                            nextImage.removeClass('transitioning');
+                        }, 1000);
+
+                        slideshowInterval = setInterval(showNextImage, interval);
+                    });
+
+                    $('.button-right-n').click(function(){
+                        clearInterval(slideshowInterval);
+
+                        var currentImage = images.eq(currentIndex);
+                        currentImage.removeClass('active').addClass('transitioning');
+                        currentIndex = (currentIndex + 1) % images.length;
+                        var nextImage = images.eq(currentIndex);
+                        nextImage.addClass('active').addClass('transitioning');
+
+                        setTimeout(function() {
+                            currentImage.removeClass('transitioning');
+                            nextImage.removeClass('transitioning');
+                        }, 1000);
+
+                        slideshowInterval = setInterval(showNextImage, interval);
+                    });
+                });
+            </script>
+
+            <!-- EVENT section -->
+            <div class="main_banner_2">
+                <div class="main_banner_2_con">
+                    <div class="main_banner_2_inner">
+                        <a href="https://bluearchive.nexon.com/events/2022/05/soundarchive" target="_blank">
+                            <img src="https://jarvis.dn.nexoncdn.co.kr/bluearchive/gb/20221109/20221109235944326-1e24188639254c02a0ac5e4c99505e8d.jpg">
+                        </a>
+                    </div>
+                    <div class="main_banner_2_inner">
+                        <a href="https://ba.vod.nexoncdn.co.kr/audio/bgm/블루 아카이브 OST) 이진아 - Target for Love.mp3"">
+                            <img src="https://jarvis.dn.nexoncdn.co.kr/bluearchive/gb/20221109/20221109235904387-2715368035d34160a900a2b65bb18a87.png">
+                        </a>
+                    </div>
+                    <span class="bn_event">EVENT!</span>
+                </div>
+
+                <div class="e_navi">
+                    <button class="button-left-e">
+                        <img src="https://lwi.nexon.com/m_ba/brand/bn_prev_btn_off.png" style="width:30px">
+                    </button>
+                    <button class="button-right-e">
+                        <img src="https://lwi.nexon.com/m_ba/brand/bn_next_btn_off.png" style="width:30px">
+                    </button>
+                </div>
+            </div>
+            <script>
+                $(document).ready(function(){
+                    var interval = 3000;
+                    var images = $('.main_banner_2_inner');
+                    var currentIndex = 0;
+
+                    images.eq(currentIndex).addClass('active');
+
+                    function showNextImage(){
+                        var currentImage = images.eq(currentIndex);
+                        currentImage.removeClass('active').addClass('transitioning');
+                        currentIndex = (currentIndex + 1) % images.length;
+                        var nextImage = images.eq(currentIndex);
+                        nextImage.addClass('active').addClass('transitioning');
+
+                        setTimeout(function() {
+                            currentImage.removeClass('transitioning');
+                            nextImage.removeClass('transitioning');
+                        }, 1000);
+                    }
+
+                    var slideshowInterval = setInterval(showNextImage, interval);
+
+                    $('.button-left-e').click(function(){
+                        clearInterval(slideshowInterval);
+
+                        var currentImage = images.eq(currentIndex);
+                        currentImage.removeClass('active').addClass('transitioning');
+                        currentIndex = (currentIndex - 1 + images.length) % images.length;
+                        var nextImage = images.eq(currentIndex);
+                        nextImage.addClass('active').addClass('transitioning');
+
+                        setTimeout(function() {
+                            currentImage.removeClass('transitioning');
+                            nextImage.removeClass('transitioning');
+                        }, 1000);
+
+                        slideshowInterval = setInterval(showNextImage, interval);
+                    });
+
+                    $('.button-right-e').click(function(){
+                        clearInterval(slideshowInterval);
+
+                        var currentImage = images.eq(currentIndex);
+                        currentImage.removeClass('active').addClass('transitioning');
+                        currentIndex = (currentIndex + 1) % images.length;
+                        var nextImage = images.eq(currentIndex);
+                        nextImage.addClass('active').addClass('transitioning');
+
+                        setTimeout(function() {
+                            currentImage.removeClass('transitioning');
+                            nextImage.removeClass('transitioning');
+                        }, 1000);
+
+                        slideshowInterval = setInterval(showNextImage, interval);
+                    });
+                });
+            </script>
+
+
+            <!-- Twitter iframe -->
+            <div class="ba_content_wrap_load">
+                <div class="tw_con">
+                    <div class="twitter_timeline" style="display:flex; max-width:100%; margin-top: 0px; margin-bottom: 0px;">
+                        <iframe id="twitter_widget_0" scrolling="no" frameborder="0" allowtransparency="true"
+                        allowfullscreen="true" class style="position: static; visibility: visible; width: 295px; height: 8397px;
+                        display: block; flex-grow: 1;" title="Twitter Timeline"
+                        src="https://syndication.twitter.com/srv/timeline-profile/screen-name/KR_BlueArchive?dnt=false&embedId=twitter-widget-0&features=eyJ0ZndfdGltZWxpbmVfbGlzdCI6eyJidWNrZXQiOltdLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2ZvbGxvd2VyX2NvdW50X3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9iYWNrZW5kIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19yZWZzcmNfc2Vzc2lvbiI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfZm9zbnJfc29mdF9pbnRlcnZlbnRpb25zX2VuYWJsZWQiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X21peGVkX21lZGlhXzE1ODk3Ijp7ImJ1Y2tldCI6InRyZWF0bWVudCIsInZlcnNpb24iOm51bGx9LCJ0ZndfZXhwZXJpbWVudHNfY29va2llX2V4cGlyYXRpb24iOnsiYnVja2V0IjoxMjA5NjAwLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3Nob3dfYmlyZHdhdGNoX3Bpdm90c19lbmFibGVkIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19kdXBsaWNhdGVfc2NyaWJlc190b19zZXR0aW5ncyI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdXNlX3Byb2ZpbGVfaW1hZ2Vfc2hhcGVfZW5hYmxlZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdmlkZW9faGxzX2R5bmFtaWNfbWFuaWZlc3RzXzE1MDgyIjp7ImJ1Y2tldCI6InRydWVfYml0cmF0ZSIsInZlcnNpb24iOm51bGx9LCJ0ZndfbGVnYWN5X3RpbWVsaW5lX3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9mcm9udGVuZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9fQ%3D%3D&frame=false&hideBorder=false&hideFooter=false&hideHeader=false&hideScrollBar=false&lang=ko&origin=https%3A%2F%2Fbluearchive.nexon.com%2Fhome&sessionId=14e6597ec1c32ee7c5903a99fe569949833eec06&showHeader=true&showReplies=false&transparent=false&widgetsVersion=aaf4084522e3a%3A1674595607486" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- play button -->
+            <div id="mv_play_btn" class="mv_play_btn">
+                <a href="#a" onclick="open_mv();">
+                    <img src="https://lwi.nexon.com/m_ba/brand/play_btn_off.png" class="mv_play_btn_off">
+                    <img src="https://lwi.nexon.com/m_ba/brand/play_btn_on.png" class="mv_play_btn_on">
+                </a>
+            </div>
+
+            <!-- MV_popup -->
+            <div class="mv_popup">
+                <div class="pop_iframe">
+                    <span class="pop_logo">
+                        <img src="https://lwi.nexon.com/m_ba/teaser/pop_logo.png">
+                    </span>
+                    <span class="pop_close">
+                        <a href="#a" onclick="close_mv();">
+                            <img src="https://lwi.nexon.com/m_ba/teaser/pop_close.png">
+                        </a>
+                    </span>
+                    <iframe id="popup_frame" width="1000px" height="565px" frameborder="0"></iframe>
+                </div>
+            </div>
+            <script>
+                $(document).ready(function(){
+                    adjustPlayButtonPosition();
+
+                    $(window).resize(function(){
+                        adjustPlayButtonPosition();
+                    });
+                });
+
+                function open_mv(){
+                    var popup = $(".mv_popup");
+                    var iframe = $("#popup_frame");
+                    var videoURL = "https://www.youtube.com/embed/X6FfcQW7bMs?rel=0";
+
+                    iframe.attr("src", videoURL);
+                    popup.fadeIn();
+                    $("body").addClass("no-scroll");
+                }
+
+                function close_mv(){
+                    var popup = $(".mv_popup");
+                    var iframe = $("#popup_iframe");
+
+                    iframe.attr("src", "");
+                    popup.fadeOut();
+                    $("body").removeClass("no-scroll");
+                }
+
+                function adjustPlayButtonPosition() {
+                    var windowWidth = $(window).innerWidth();
+                    var playButton = $("#mv_play_btn");
+                    var playButtonWidth = playButton.outerWidth();
+
+                    var leftPosition = (windowWidth - playButtonWidth) / 2;
+                    playButton.animate({ left: leftPosition + "px" }, 40);
+                }
+            </script>
+
+        </div>
+
+        <!-- F O O T E R -->
+        <div id="ba_footer">
+            <div><a href="#a"><img src="https://lwi.nexon.com/m_ba/brand/f_logo.png" id="nexon_logo_1"></a></div>
+            <img src="https://lwi.nexon.com/m_ba/brand/f_line.png" id="footer_between">
+
+            <div><a href="#a"><img src="https://nxm-clw-cdn.dn.nexoncdn.co.kr/bluearchive/img/brand/f_logo3.png" id="nexon_logo_2"></a></div>
+            <img src="https://lwi.nexon.com/m_ba/brand/f_line.png" id="footer_between">
+
+            <div><a href="https://member.nexon.com/policy/privacy.aspx" id="private">개인정보처리방침</a></div>
+
+            <div id="copyrights">© 2021 NEXON Korea Corp. & NEXON GAMES Co., Ltd. All Rights Reserved.</div>
+        </div>
+    </div>
+
+    <div id="image-container">
+        <video src="img/흰색.mp4" autoplay="autoplay" muted="muted" style="width: 1920px; height: 1080px"></video> 
+    </div>
+
+    <script>
+        const imageContainer = document.getElementById('image-container');
+        const images = imageContainer.getElementsByTagName('video');
+        let currentIndex = 0;
+    </script>
+</body>
+</html>

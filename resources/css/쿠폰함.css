@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 0;
+    text-decoration: none;
+    font-family: NEXONLv1Gothic,Dotum,"돋움";
+    letter-spacing: .16px;
+}
+#wrap {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    background-color: #f8f9fa;
+    overflow: hidden;
+}
+.sub_header {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+.sub_header img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    object-fit: cover;
+}
+img {
+    max-width: 100%;
+    vertical-align: top;
+    overflow: clip;
+}
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.sub_center_wrap {
+position: relative;
+margin: 0 auto;
+padding-bottom: 40px;
+width: 100%;
+max-width: 514px;
+overflow: hidden;
+background-color: #fff;
+}
+.sub_tab {
+width: 414px;
+margin-left: 50px;
+margin-top: 20px;
+height: 68px;
+}
+.sub_tab ul {
+width: 100%;
+height: 100%;
+}
+.sub_tab ul.one li {
+width: 100%;
+}
+.sub_tab ul li.active {
+border-bottom: 3px solid #18a0fb;
+text-align: center;
+}
+.sub_tab ul li.active a {
+color: #18a0fb;
+font-size: 24px;
+line-height: 68px;
+}
+select.select_box {
+margin-top:20px;
+margin-bottom: 5px;
+margin-left : 15%;
+width: 100%;
+max-width: 354px;
+height: 60px;
+line-height: 60px;
+padding-left: 24px;
+background-color: #efefef;
+font-size: 18px;
+}
+option {
+font-weight: normal;
+display: block;
+white-space: nowrap;
+min-height: 1.2em;
+padding: 0px 2px 1px;
+}
+.input_box {
+margin-top:2px;
+margin-bottom: 5px;
+margin-left : 15%;
+width: 330px;
+height: 60px;
+line-height: 60px;
+padding-left: 24px;
+background-color: #efefef;
+font-size: 18px;
+}
+.btn_certify, .btn_confirm {
+width: 355px;
+height: 60px;
+margin-left : 15%;
+line-height: 62px;
+background-color: #18a0fb;
+text-align: center;
+margin-top: 10px;
+color: #fff;
+font-size: 18px;
+cursor: pointer;
+}
+.divider {
+margin-top: 40px;
+padding-top: 40px;
+margin-left: 80px;
+width: 70%;
+border-top: 1px solid #333;
+}
+.sub_title {
+width: 100%;
+font-size: 18px;
+line-height: 1;
+color: #000;
+text-align: left;
+}
+.btn_wrap {
+margin-top: 20px;
+width: 100%;
+text-align: center;
+}
+.btn_wrap button {
+height: 32px;
+padding: 0 20px 0 36px;
+border-radius: 15px;
+font-size: 12px;
+letter-spacing: .16px;
+cursor: pointer;
+}
+.btn_notice{
+border: 1px solid #000;
+background: url(https://mcoupon.nexon.com/img/icon01.png) 20px center no-repeat;
+opacity: 0.7;
+}
+.btn_notice:hover{
+opacity: 1;
+}
+.btn_confirm:hover{
+background-color: black;
+}
+.footer {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 100px;
+background-color: #fff;
+}
+.copyright {
+margin-top: 8px;
+}
+.footer_info {
+display: flex;
+margin-left: 8px;
+}
+p {
+display: block;
+margin-block-start: 1em;
+margin-block-end: 1em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+}
+
+.footer a {
+display: inline-block;
+height: 25px;
+text-indent: -99999px;
+background-size: 100% auto;
+background-repeat: no-repeat;
+text-decoration: none;
+}
+.footer .select_lang {
+width: 200px;
+height: 44px;
+background: #b1b1b1;
+border: none;
+font-size: 17px;
+color: #fff;
+text-align-last: center;
+outline: none;
+}
+.select_lang {
+margin-left: 6px;
+padding-left: 3px;
+}
+select:not(:-internal-list-box) {
+overflow: visible !important;
+}
+option {
+font-weight: normal;
+display: block;
+white-space: nowrap;
+min-height: 1.2em;
+padding: 0px 2px 1px;
+}
+.footer .select_lang option {
+background: #fff;
+color: #464646;
+}
+.pop {
+display: none;
+position: fixed;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+background: rgba(0,0,0,.2);
+word-break: break-all;
+overflow-y: auto;
+z-index: 2000;
+}
+.pop_box {
+position: absolute;
+top: 50%;
+left: 50%;
+padding-bottom: 30px;
+width: 414px;
+max-width: 90%;
+background-color: #fff;
+transform: translate(-50%,-50%);
+}
+.pop_title {
+position: relative;
+width: 100%;
+height: 71px;
+border-bottom: 3px solid #000;
+}
+.pop_title h4 {
+float: left;
+font-weight: 400;
+font-size: 20px;
+line-height: 1;
+color: #333;
+margin-left: 30px;
+margin-top: 27px;
+}
+
+.pop_title .ico_close_pop {
+position: absolute;
+top: 10px;
+right: 10px;
+cursor: pointer;
+background-color: white;
+}
+.pop_inner {
+padding: 0 40px 20px;
+text-align: center;
+}
+#popNotice dl {
+text-align: left;
+line-height: 1.3;
+}
+#popNotice dt {
+padding: 7% 0 3%;
+font-weight: 700;
+}
+#popNotice dd {
+margin-left: 12px;
+text-indent: -12px;
+}
+#popNotice li {
+margin-top: 6px;
+}
+.pop2 {
+display: none;
+position: fixed;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+background: rgba(0,0,0,.2);
+word-break: break-all;
+overflow-y: auto;
+z-index: 2000;
+}
+.pop_title h4 {
+float: left;
+font-weight: 900;
+font-size: 20px;
+line-height: 1;
+color: #333;
+margin-left: 30px;
+margin-top: 27px;
+}
+.pop2_inner p {
+font-size: 18px;
+line-height: 24px;
+color: #666;
+}
+.pop_btn .btn_confirm_pop {
+background-color: #18a0fb;
+}
+.pop_btn button {
+width: 174px;
+height: 60px;
+line-height: 62px;
+text-align: center;
+color: #fff;
+font-size: 18px;
+cursor: pointer;
+margin-left: 30%;
+}
+.btn_confirm_pop:hover{
+background-color: black;
+}
